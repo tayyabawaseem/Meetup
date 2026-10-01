@@ -9,7 +9,8 @@ export const dummyUser = {
     primaryEmailAddress: {
         emailAddress: "alex.rivera@example.com",
     },
-    imageUrl: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
+    imageUrl:
+        "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
 };
 
 export const dummyStats = {
@@ -18,8 +19,6 @@ export const dummyStats = {
     monthlyLimit: null, // Unlimited for premium
     maxParticipants: 100,
 };
-
-
 
 export const dummySessions = [
     {
@@ -36,25 +35,37 @@ export const dummySessions = [
         },
         participants: [
             {
-                user: { id: "user_mock_001", email: "alex.rivera@example.com" },
+                user: {
+                    id: "user_mock_001",
+                    email: "alex.rivera@example.com",
+                },
                 name: "Alex Rivera",
                 joinedAt: "2026-08-14T09:30:00.000Z",
                 leftAt: "2026-08-14T10:45:00.000Z",
             },
             {
-                user: { id: "user_mock_002", email: "sarah.chen@example.com" },
+                user: {
+                    id: "user_mock_002",
+                    email: "sarah.chen@example.com",
+                },
                 name: "Sarah Chen",
                 joinedAt: "2026-08-14T09:31:12.000Z",
                 leftAt: "2026-08-14T10:44:20.000Z",
             },
             {
-                user: { id: "user_mock_003", email: "marcus.vance@example.com" },
+                user: {
+                    id: "user_mock_003",
+                    email: "marcus.vance@example.com",
+                },
                 name: "Marcus Vance",
                 joinedAt: "2026-08-14T09:32:05.000Z",
                 leftAt: "2026-08-14T10:45:00.000Z",
             },
             {
-                user: { id: "user_mock_004", email: "elena.rostova@example.com" },
+                user: {
+                    id: "user_mock_004",
+                    email: "elena.rostova@example.com",
+                },
                 name: "Elena Rostova",
                 joinedAt: "2026-08-14T09:35:40.000Z",
                 leftAt: "2026-08-14T10:40:15.000Z",
@@ -91,6 +102,7 @@ export const dummySessions = [
             },
         ],
     },
+
     {
         id: 2,
         meetingId: "zxc-vbn-mas",
@@ -105,19 +117,28 @@ export const dummySessions = [
         },
         participants: [
             {
-                user: { id: "user_mock_002", email: "sarah.chen@example.com" },
+                user: {
+                    id: "user_mock_002",
+                    email: "sarah.chen@example.com",
+                },
                 name: "Sarah Chen",
                 joinedAt: "2026-08-14T14:15:00.000Z",
                 leftAt: null,
             },
             {
-                user: { id: "user_mock_001", email: "alex.rivera@example.com" },
+                user: {
+                    id: "user_mock_001",
+                    email: "alex.rivera@example.com",
+                },
                 name: "Alex Rivera",
                 joinedAt: "2026-08-14T14:16:30.000Z",
                 leftAt: null,
             },
             {
-                user: { id: "user_mock_005", email: "david.kim@example.com" },
+                user: {
+                    id: "user_mock_005",
+                    email: "david.kim@example.com",
+                },
                 name: "David Kim",
                 joinedAt: "2026-08-14T14:18:10.000Z",
                 leftAt: null,
@@ -140,6 +161,7 @@ export const dummySessions = [
             },
         ],
     },
+
     {
         id: 3,
         meetingId: "abc-def-ghi",
@@ -154,13 +176,19 @@ export const dummySessions = [
         },
         participants: [
             {
-                user: { id: "user_mock_001", email: "alex.rivera@example.com" },
+                user: {
+                    id: "user_mock_001",
+                    email: "alex.rivera@example.com",
+                },
                 name: "Alex Rivera",
                 joinedAt: "2026-08-13T10:00:00.000Z",
                 leftAt: "2026-08-13T10:30:00.000Z",
             },
             {
-                user: { id: "user_mock_004", email: "elena.rostova@example.com" },
+                user: {
+                    id: "user_mock_004",
+                    email: "elena.rostova@example.com",
+                },
                 name: "Elena Rostova",
                 joinedAt: "2026-08-13T10:01:00.000Z",
                 leftAt: "2026-08-13T10:30:00.000Z",
@@ -173,6 +201,56 @@ export const dummySessions = [
                 senderName: "Elena Rostova",
                 text: "All automated test suites are passing.",
                 timestamp: "2026-08-13T10:10:00.000Z",
+            },
+        ],
+    },
+
+    {
+        id: 4,
+        meetingId: "jkl-mno-pqr",
+        title: "Client Project Discussion",
+        status: "ended",
+        createdAt: "2026-08-12T15:00:00.000Z",
+        endedAt: "2026-08-12T15:45:00.000Z",
+        host: {
+            id: "user_mock_001",
+            name: "Alex Rivera",
+            email: "alex.rivera@example.com",
+        },
+        participants: [
+            {
+                user: {
+                    id: "user_mock_001",
+                    email: "alex.rivera@example.com",
+                },
+                name: "Alex Rivera",
+                joinedAt: "2026-08-12T15:00:00.000Z",
+                leftAt: "2026-08-12T15:45:00.000Z",
+            },
+            {
+                user: {
+                    id: "user_mock_005",
+                    email: "david.kim@example.com",
+                },
+                name: "David Kim",
+                joinedAt: "2026-08-12T15:02:00.000Z",
+                leftAt: "2026-08-12T15:44:00.000Z",
+            },
+        ],
+        messages: [
+            {
+                id: "m30",
+                senderId: "user_mock_001",
+                senderName: "Alex Rivera",
+                text: "Let's review the project requirements and timeline.",
+                timestamp: "2026-08-12T15:05:00.000Z",
+            },
+            {
+                id: "m31",
+                senderId: "user_mock_005",
+                senderName: "David Kim",
+                text: "Everything looks good from my side.",
+                timestamp: "2026-08-12T15:10:00.000Z",
             },
         ],
     },
@@ -216,6 +294,14 @@ export const dummyRemoteParticipants = [
         audioEnabled: true,
         videoEnabled: false,
     },
+    {
+    socketId: "socket_david_005",
+    userId: "user_mock_005",
+    userName: "David Kim",
+    stream: null,
+    audioEnabled: true,
+    videoEnabled: true,
+},
 ];
 
 export const dummyInitialChatMessages = [
